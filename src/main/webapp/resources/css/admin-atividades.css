@@ -1,0 +1,155 @@
+
+.admin-activity-name {
+    display: block;
+    font-weight: 800;
+    color: var(--admin-navy);
+    font-size: 0.95rem;
+}
+
+.admin-activity-id {
+    display: block;
+    margin-top: 0.25rem;
+    color: #8b96a1;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.68rem;
+}
+
+.admin-activity-description {
+    max-width: 370px;
+    color: var(--admin-muted);
+    font-size: 0.84rem;
+    line-height: 1.5;
+    margin-top: 0.35rem;
+}
+
+.admin-activity-type {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.65rem;
+    border-radius: 8px;
+    background: #edf3f9;
+    color: var(--admin-blue);
+    font-size: 0.78rem;
+    font-weight: 750;
+    white-space: nowrap;
+}
+
+.admin-activity-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.65rem;
+    border-radius: 8px;
+    background: #edf6f0;
+    color: var(--admin-green-dark);
+    font-size: 0.78rem;
+    font-weight: 750;
+    white-space: nowrap;
+}
+
+.admin-activity-status::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    flex: 0 0 7px;
+    border-radius: 50%;
+    background: var(--admin-green);
+}
+
+.admin-activity-dates {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    color: #46515e;
+    font-size: 0.82rem;
+    white-space: nowrap;
+}
+
+.admin-activity-date-label {
+    color: #89949e;
+    font-size: 0.68rem;
+    font-weight: 750;
+    margin-right: 0.35rem;
+}
+
+.admin-activity-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+.admin-activity-view {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #cde3d3;
+    border-radius: 10px;
+    background: #f4faf6;
+    color: var(--admin-green-dark);
+    font-size: 0.82rem;
+    font-weight: 750;
+    transition: 0.18s ease;
+}
+
+.admin-activity-view:hover {
+    background: var(--admin-green);
+    border-color: var(--admin-green);
+    color: #ffffff;
+}
+
+.admin-activity-summary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--admin-muted);
+    font-size: 0.82rem;
+}
+
+.admin-activity-summary-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--admin-green);
+}
+
+.admin-activity-empty {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.admin-activity-empty-icon {
+    width: 88px;
+    height: 88px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 1.2rem;
+    border-radius: 22px;
+    background: #edf6f0;
+    font-size: 2.5rem;
+}
+
+.admin-activity-empty h2 {
+    color: var(--admin-navy);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.admin-activity-empty p {
+    max-width: 470px;
+    margin: 0 auto 1.5rem;
+    color: var(--admin-muted);
+    line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+    .admin-activity-actions {
+        justify-content: flex-start;
+    }
+
+    .admin-activity-description {
+        max-width: 270px;
+    }
+}
