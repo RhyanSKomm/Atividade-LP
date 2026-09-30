@@ -1,5 +1,7 @@
 # Portal do Laboratório de Robótica - IFMS Campus Campo Grande
 
+Repositório: https://github.com/RhyanSKomm/Atividade-LP
+
 Portal web desenvolvido para o Laboratório de Robótica do IFMS - Campus Campo Grande.
 
 O sistema permite consultar informações sobre o laboratório, estudantes e atividades, além de realizar a manutenção dos principais registros utilizados pelo portal.
